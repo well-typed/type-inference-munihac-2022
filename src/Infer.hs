@@ -1,3 +1,7 @@
+-- If you want to follow along:
+--
+-- git clone https://github.com/well-typed/type-inference-munihac-2022.git
+--
 module Main where
 
 -- import Control.Applicative hiding ((<|>))
