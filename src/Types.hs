@@ -49,7 +49,7 @@ instance Pretty PType where
   pretty (Forall [] t) =
     pretty t
   pretty (Forall xs t) =
-    "forall " ++ intercalate " " xs ++ " . " ++ pretty t
+    "forall " ++ intercalate " " xs ++ ". " ++ pretty t
 
 instance Pretty MType where
   pretty :: MType -> String

@@ -4,7 +4,6 @@
 --
 module Main where
 
--- import Control.Applicative hiding ((<|>))
 -- import Control.Monad.Identity
 -- import Control.Monad.State.Strict
 -- import Control.Monad.Except
