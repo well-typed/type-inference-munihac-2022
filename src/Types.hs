@@ -17,6 +17,17 @@ data MType =
   | List MType       -- ^ list type
   deriving (Show)
 
+example1 :: MType
+example1 = intTy ~> intTy -- Arr (Con "Int") (Con "Int")  -- Int -> Int
+
+example2 :: MType
+example2 = Arr (TVar "a") (TVar "b")  -- a -> b
+
+example3 :: PType
+example3 = Forall ["a", "b"] example2   -- forall a b. a -> b
+
+
+
 -- | Polytypes (aka type schemes)
 data PType =
     Forall [Name] MType
